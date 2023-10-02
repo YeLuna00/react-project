@@ -37,6 +37,9 @@ import { PlayGames } from "./assets/GamesData";
 import Row from 'react-bootstrap/Row';
 import CustomCardGrid from "./components/CustomCardGrid";
 import { Fragment } from "react";
+import NavBarScroll from "./components/NavBarScroll";
+import PaginationAdvanced from "./components/PaginationAdvanced";
+import DarkVariantExample from "./components/DarkVariantExample";
 
 function App() {
   // Define a function to render the card grid
@@ -60,11 +63,16 @@ function App() {
 
   return (
     <Fragment>
+      <NavBarScroll></NavBarScroll>
+      <DarkVariantExample></DarkVariantExample>
       <br />
       <ListGroup />
       <br />
       {renderCardGrid()} {/* Render the card grid */}
       <br />
+      <center>
+      <PaginationAdvanced></PaginationAdvanced>
+      </center>
     </Fragment>
   );
 }
